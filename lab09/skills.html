@@ -1,85 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset = "utf-8">
-        <title>Skills</title>
-        <style>
-            table,th,td {border: 1px solid black;}
-        </style>
-        <link rel="styles.css" href = "/styles.css">
-        <script src="https://fontawesome.com/search?q=excel&o=r " crossorigin="anonymous"></script>
-    </head>
+<head>
+    <meta charset="utf-8">
+    <title>Skills</title>
     <style>
-        header {font-size: 1.5em;text-align: center;}
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;}
+
+        header {
+            font-size: 1.5em;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .topnav {
+            background-color: #1e3b66;
+            overflow: hidden;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+        }
+        .topnav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;}
+
+        .flex-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        .flex-container > div {
+            text-align: center;
+            font-size: 18px;
+        }
+        .wrap {
+            background-color: #1e3b66;
+            border-radius: 10px;
+            padding: 20px;
+            color: white;
+            text-align: left;
+            margin-top: 20px;
+            width: 200px;
+        }
+        .wrap h2 {
+            margin-top: 0;
+        }
     </style>
-  <div class="topnav">
-    <a class="Home" href="../lab08/index.html">Home</a>
-    <a class ="Skills" href="skills.html">Skills</a>
-    <a class = "Contact" href = "../lab08/Contact.html">Contact</a>
-  </div>
-    <body>
-        <h1 class="special">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://kit.fontawesome.com/4cd6ff18bc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="topnav">
+        <a class="Home" href="../lab08/index.html">Home</a>
+        <a class="Skills" href="skills.html">Skills</a>
+        <a class="Contact" href="../lab08/Contact.html">Contact</a>
+    </div>
+    <h1>
         <header>Technical Skills</header>
-        
-        <i class="fa-brands fa-python"></i>
-        <br>
-        Python
-        <br>
-        <i class="fa-solid fa-file-code"></i>
-        <br>
-        HTML
-        <br>
-        <i class="fa-brands fa-figma"></i>
-        <br>
-        Figma
-        <br>
-        <i class="fa-solid fa-object-group"></i>
-        <br>
-        Canva
-        <br>
-        <i class="fa-regular fa-file-excel"></i>
-        <br>
-        Excel
-        <br>
-
-
-
-
-
-        <table>
-            <caption>Technical Skills</caption>
-            <tr>
-                <th>Category</th>
-                <th>Skill</th>
-                <th>Competancy Level</th>
-            </tr>
-            <tr class="evenrow">
-                <td>Coding</td>
-                <td>CSS</td>
-                <td>Beginner</td>
-            </tr>
-            <tr>
-                <td>Coding</td>
-                <td>R studio</td>
-                <td>Some Experience</td>
-            </tr>
-            <tr class="evenrow"></tr>>
-                <td>Design</td>
-                <td>Photoshop</td>
-                <td>Beginner</td>
-            </tr>
-            <tr class="evenrow"></trclass>>
-                <td>Applications</td>
-                <td>Microsoft Word</td>
-                <td>Master</td>
-            </tr>
-            <tr>
-                <td>Applications</td>
-                <td>Microsoft PowerPoint</td>
-                <td>Proficient</td>
-            </tr>
-            </tr>
-        </table>
     </h1>
-    <body>
-           
+    <p>My name is Amy Kim and I am a current sophomore at Syracuse University. 
+        <br>Below are some of skills that I have learned throughout the years:</p>
+    <div class="flex-container">
+        <div>
+            <i class="fa-brands fa-python"></i>
+            <br>
+            Python
+        </div>       
+        <div>
+            <i class="fa-solid fa-file-code"></i>
+            <br>
+            HTML
+        </div>
+        <div>
+            <i class="fa-brands fa-figma"></i>
+            <br>
+            Figma
+        </div>
+        <div>
+            <i class="fa-solid fa-object-group"></i>
+            <br>
+            Canva
+        </div>
+        <div>
+            <i class="fa-regular fa-file-excel"></i>
+            <br>
+            Excel
+        </div>
+    </div>
+    <div class="wrap">
+        <h2>Other Skills</h2>
+        <ul style="list-style-type: none; padding-left: 0;">
+        <li>Microsoft PowerPoint </li>
+        <li>Microsoft Word </li>
+        <li>CSS </li>
+        <li>Photoshop </li>
+        <li>Google Suite </li>
+        </ul>
+    </div>
+</body>
+</html>
