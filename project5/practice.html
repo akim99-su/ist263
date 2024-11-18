@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Description and Image</title>
+    <style>
+        /* Container for the layout */
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        /* Description styling */
+        .description {
+            width: 45%;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Image styling */
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Optional: Add some responsiveness */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .description, .image-container {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="description">
+            <h1>The Flavor of Green Pumpkin</h1>
+            <p>Earthy, mildly sweet, and delightfully nutty—green pumpkin brings a unique charm to every dish. Perfectly suited for savory creations, its smooth texture and wholesome flavor capture the essence of natural goodness.</p>
+        </div>
+        <div class="image-container">
+            <img src="../images/pumpkin.png" alt="Green Pumpkin">
+        </div>
+    </div>
+</body>
+</html>
