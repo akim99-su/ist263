@@ -179,15 +179,29 @@
             }
 
             @media (max-width: 768px) {
+                .information{
+                    flex-direction: column;
+                    text-align: center;
+                }
                 .flex-container {
                     grid-template-columns: 1fr; 
                 }
                 iframe {
-                    height: 100px;
+                    width: auto;
+                    height: 200px;
                 }
                 .address, .contact {
-                    flex: 1 0 100%; /* Full width on small screens */
+                    flex: none; 
                     text-align: center;
+                }
+                .content h1{
+                    font-size: 24px;
+                }
+                .content h2 {
+                    font-size: 16px;
+                }
+                .flex-container p {
+                    font-size: 12px;
                 }
             }
 

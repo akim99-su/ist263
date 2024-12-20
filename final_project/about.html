@@ -96,6 +96,10 @@
                 text-align: center;
             }
             @media (max-width: 768px) {
+                .information{
+                    flex-direction: column;
+                    text-align: center;
+                }
                 .container {
                     flex-direction: column;
                 }
@@ -103,6 +107,14 @@
                 .history, .about {
                     width: 100%;
                     padding: 10px;
+                }
+                iframe {
+                    width: auto;
+                    height: 200px;
+                }
+                .address, .contact {
+                    flex: none; 
+                    text-align: center;
                 }
             }
 
